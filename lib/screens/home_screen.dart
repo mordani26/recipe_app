@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Recipe Book')),
+      appBar: AppBar(title: const Text('My Recipe Book')),
       body: ListView.builder(
         itemCount: sampleRecipes.length,
         itemBuilder: (context, index) {
