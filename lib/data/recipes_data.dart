@@ -18,6 +18,17 @@ const List<Recipe> sampleRecipes = [
         '4) Mix pasta in and serve.',
   ),
   Recipe(
+    name: 'Grilled Cheese',
+    imagePath: 'assets/images/cheesy.jpg',
+    ingredients: ['2 slices bread', '2 slices cheese', '1 tbsp butter'],
+    instructions:
+        '1) Butter the bread.\n'
+        '2) Place cheese between slices.\n'
+        '3) Cook in pan until golden brown.\n'
+        '4) Serve hot.',
+  ),
+
+  Recipe(
     name: 'Fresh Salad',
     imagePath: 'assets/images/salad.jpg',
     ingredients: [
