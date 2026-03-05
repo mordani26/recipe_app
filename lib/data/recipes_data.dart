@@ -34,4 +34,34 @@ const List<Recipe> sampleRecipes = [
         '3) Add olive oil, lemon, and salt.\n'
         '4) Toss and serve.',
   ),
+  Recipe(
+    name: 'Avocado Toast',
+    imagePath: 'assets/images/toast.jpg',
+    ingredients: [
+      '2 slices bread',
+      '1 avocado',
+      'Salt',
+      'Chili flakes (optional)',
+    ],
+    instructions:
+        '1) Toast the bread.\n'
+        '2) Mash avocado with salt.\n'
+        '3) Spread on toast.\n'
+        '4) Add chili flakes if you want.',
+  ),
+  Recipe(
+    name: 'Egg Omelet',
+    imagePath: 'assets/images/egg.jpg',
+    ingredients: [
+      '2 eggs',
+      'Salt and pepper',
+      'Cheese (optional)',
+      'Butter or oil',
+    ],
+    instructions:
+        '1) Beat eggs with salt and pepper.\n'
+        '2) Heat pan with butter.\n'
+        '3) Pour eggs and cook.\n'
+        '4) Fold and serve.',
+  ),
 ];

@@ -23,35 +23,52 @@ class DetailsScreen extends StatelessWidget {
             const SizedBox(height: 16),
 
             const Padding(
-              padding: EdgeInsets.all(16),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: Text(
                 'Ingredients',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
             ),
+            const SizedBox(height: 6),
 
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: recipe.ingredients
-                    .map((ingredient) => Text('• $ingredient'))
+                    .map(
+                      (ingredient) => Padding(
+                        padding: const EdgeInsets.only(bottom: 6),
+                        child: Text(
+                          '• $ingredient',
+                          style: const TextStyle(fontSize: 16),
+                        ),
+                      ),
+                    )
                     .toList(),
               ),
             ),
 
+            const SizedBox(height: 16),
+
             const Padding(
-              padding: EdgeInsets.all(16),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: Text(
                 'Instructions',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
             ),
+            const SizedBox(height: 6),
 
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Text(recipe.instructions),
+              child: Text(
+                recipe.instructions,
+                style: const TextStyle(fontSize: 16, height: 1.35),
+              ),
             ),
+
+            const SizedBox(height: 24),
           ],
         ),
       ),

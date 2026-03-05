@@ -15,23 +15,29 @@ class HomeScreen extends StatelessWidget {
         itemBuilder: (context, index) {
           final Recipe recipe = sampleRecipes[index];
 
-          return ListTile(
-            leading: Image.asset(
-              recipe.imagePath,
-              width: 50,
-              height: 50,
-              fit: BoxFit.cover,
-            ),
-            title: Text(recipe.name),
-            trailing: const Icon(Icons.arrow_forward),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => DetailsScreen(recipe: recipe),
+          return Card(
+            margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            child: ListTile(
+              leading: ClipRRect(
+                borderRadius: BorderRadius.circular(6),
+                child: Image.asset(
+                  recipe.imagePath,
+                  width: 56,
+                  height: 56,
+                  fit: BoxFit.cover,
                 ),
-              );
-            },
+              ),
+              title: Text(recipe.name),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => DetailsScreen(recipe: recipe),
+                  ),
+                );
+              },
+            ),
           );
         },
       ),
