@@ -20,7 +20,7 @@ class DetailsScreen extends StatelessWidget {
               width: double.infinity,
               fit: BoxFit.cover,
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 25),
 
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 16),
